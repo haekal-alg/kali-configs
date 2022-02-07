@@ -1,3 +1,12 @@
-Add this to `.bashrc` to open tmux upon starting WSL
+# .bashrc
+Add these commands to `.bashrc` file.
+```
+[[ $TERM != "screen" ]] && exec tmux`
+alias cb=clipboard
+```
 
-`[[ $TERM != "screen" ]] && exec tmux`
+Installing `clipboard-cli`
+```
+$ sudo apt-get install npm
+$ sudo npm install --global clipboard-cli
+```
