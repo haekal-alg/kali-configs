@@ -1,7 +1,7 @@
 # .bashrc
 Add these commands to `.bashrc` file.
 ```
-[[ $TERM != "screen" ]] && exec tmux`
+[[ $TERM != "screen" ]] && exec tmux
 alias cb=clipboard
 ```
 
