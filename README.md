@@ -1,12 +1,9 @@
-# .bashrc
-Add these commands to `.bashrc` file.
+# kali-config
+## Install ZSH
 ```
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+sudo apt install -y zsh zsh-syntax-highlighting zsh-autosuggestions
 ```
-
-Installing `xclip` so you can copy the output from the tmux session to the system clipboard using vim key bindings.
+## Install Tmux and Xclip
 ```
-$ sudo apt-get install xclip
+sudo apt-get install tmux xclip
 ```
