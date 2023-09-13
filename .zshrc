@@ -258,7 +258,7 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-    exec tmux
+    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 fi
 
 alias pattern_create=/opt/metasploit-framework/embedded/framework/tools/exploit/pattern_create.rb
