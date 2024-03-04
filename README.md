@@ -1,6 +1,6 @@
 # kali-config
 ```
-wget https://raw.githubusercontent.com/haekal-alg/kali-configs/main/.tmux.conf -o ~$USER/.tmux.conf
+wget https://raw.githubusercontent.com/haekal-alg/kali-configs/main/.tmux.conf -O ~$USER/.tmux.conf
 ```
 
 ## Install ZSH
